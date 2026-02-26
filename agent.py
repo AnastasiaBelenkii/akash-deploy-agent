@@ -382,7 +382,7 @@ async def get_chat_interface():
     <style>
         * { box-sizing: border-box; }
         body { font-family: system-ui, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; background: #1a1a2e; color: #eee; }
-        h1 { margin-bottom: 5px; }
+        h1 { margin-bottom: 10px; }
         #chat-container { border: 1px solid #333; border-radius: 8px; height: 400px; overflow-y: auto; padding: 15px; background: #16213e; margin-bottom: 15px; }
         .message { margin-bottom: 15px; padding: 10px; border-radius: 6px; }
         .user { background: #0f3460; text-align: right; }
@@ -398,7 +398,7 @@ async def get_chat_interface():
         #examples { margin-top: 10px; display: flex; gap: 8px; flex-wrap: wrap; }
         .example-btn { padding: 6px 14px; border: 1px solid #333; border-radius: 16px; background: transparent; color: #aaa; cursor: pointer; font-size: 13px; }
         .example-btn:hover { border-color: #0f3460; color: #eee; }
-        .tagline { color: #888; margin-top: -15px; margin-bottom: 20px; font-size: 14px; }
+        .tagline { color: #888; margin-top: 5px; margin-bottom: 20px; font-size: 14px; }
     </style>
 </head>
 <body>
