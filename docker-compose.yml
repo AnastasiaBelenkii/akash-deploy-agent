@@ -1,0 +1,18 @@
+services:
+  akash-deploy-agent:
+    image: hoskayne/akash-deploy-agent:latest
+    container_name: akash-deploy-agent
+    ports:
+      - "8080:8080"
+    environment:
+      # Required: Akash Console API key
+      - AKASH_API_KEY=${AKASH_API_KEY}
+      # Required: AkashML API key for LLM
+      - AKASHML_API_KEY=${AKASHML_API_KEY}
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
